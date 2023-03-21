@@ -1,0 +1,228 @@
+.events {
+    
+    &__container {
+        width: 100%;
+    }
+
+    &__cover {
+        position: absolute;
+        background: radial-gradient(circle, rgba(91,56,240,1) 0%, rgba(81,96,231,1) 50%, rgba(111,31,251,1) 100%);
+        width: 1600px;
+        height: 838px;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: -25px auto;
+        border-radius: 20px;
+        box-shadow: 0px 40px 15px -3px rgba(0,0,0,0.1);
+    }
+
+    &__pannel {
+        height: 768px;
+        background: linear-gradient(180deg, rgba(91,56,240,1) 0%, rgba(81,96,231,1) 50%, rgba(111,31,251,1) 100%);
+        
+        position: relative;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 240px;
+            list-style-type: none;
+
+            li {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #FFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.1);    
+            }
+        }
+    }
+
+    &__content {
+        max-width: 1800px;
+        padding: 0 50px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 80px;
+        color: #000;
+
+        > p {
+            margin: 0 auto;
+            text-align: center;
+            border-top: 1px solid lightgray;
+            padding: 6px 0 0;
+            width: 95%;
+            color: #adb3bc;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 54px;
+            margin: 10px 0 30px;
+        }
+
+        > div {
+            p {
+                line-height: 16px;
+                margin-bottom: 25px;
+                font-size: 20px;
+
+                svg {
+                    margin: 0 10px -4px 0;
+                }
+
+                span {
+                    color: #0098ff;
+                }
+            }
+        }
+    }
+
+    &__description {
+
+        display: flex;
+        justify-content: center;
+        background: #f8f4fc;
+        padding-bottom: 60px;
+        margin: 30px 0 200px;
+        position: relative;
+        max-height: 300px;
+        height: 100%;
+        
+        > div:first-child {
+            padding: 40px 50px 0 50px;
+            width: 1370px;
+            position: relative;
+
+            span {
+                font-weight: bold;
+                font-size: 24px;
+                color: #000;
+            }
+
+            p {
+                color: gray;
+                margin-top: 30px;
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }        
+    }
+
+    @media (max-width: 1200px){
+
+        &__cover {
+            width: 960px;
+            height: 503px;
+        }
+
+        &__pannel {
+            height: 440px;
+        }
+
+        &__description {
+            flex-wrap: wrap;
+            max-height: 100%;
+            margin-bottom: 100px;
+        }
+    }
+
+    @media (max-width: 992px){
+
+        &__cover {
+            width: 768px;
+            height: 403px;
+        }
+
+        &__pannel {
+            height: 340px;
+        }
+
+        &__description {
+            flex-wrap: wrap;
+            max-height: 100%;
+            margin-bottom: 100px;
+        }
+    }
+
+    @media (max-width: 768px){
+
+        &__cover {
+            width: 614px;
+            height: 322px;
+        }
+
+        &__pannel {
+            height: 260px;
+
+            ul { 
+                bottom: -20px;
+                li {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        &__content {
+            h1 {
+                font-size: 44px;
+            }
+        }
+    }
+
+    @media (max-width: 480px){
+
+        &__cover {
+            width: 404px;
+            height: 212px;
+        }
+
+        &__pannel {
+            height: 160px;
+
+            ul { 
+                bottom: -14px;
+                li {
+                    width: 30px;
+                    height: 30px;
+
+                    svg {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+
+        &__content {
+
+            padding-top: 55px;
+
+            h1 {
+                font-size: 28px;
+            }
+
+            > p {
+                font-size: 14px;
+            }
+
+            > div {
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
