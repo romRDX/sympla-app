@@ -37,6 +37,13 @@ Eu fiz a responsividade usando os breackpoints: 1200, 992, 768 e 480. Normalment
 que ficou espremido demais e que não ficaria bom assim, também imagino que hoje em dia seja dificil um smartphone com tela
 de "320px" então acho que não foi uma decisão tão ruim.
 
+# Tagueamento com Google Analytics usando data layers e Ferramentas de avaliação de performance
+Não tenho muita experiencia com esses tópicos, então acabou que não consegui implementá-los no projeto. As experiencias que tive com otimização de performance
+foram mais brutas, de forma que era perfeitamente visível a diferença, dai tinha que usar code splitting, lazy loading, verificar re-renders extras do react
+e coisas mais diretamente relacionadas ao código. Da mesma forma, não tive experiencias com tagueamento com google analytics pois os produtos que já contribui
+eram feitos para um público fechado, então não precisavam possuir esse quesito. Mas com certeza é algo que estarei estudando e aprendendo nas próximas semanas
+já que vi que é algo a mais que posso adicionar ao meu repertório.
+
 # Palavras finais
 Apesar de ser um projetinho simples e pequeno ele deu um trabalho legal, o layout com todos esses detalhes foi o que mais
 tomou tempo, fazer a organização das pastas/arquivos, a responsividade, testes e ajustes finais foram até que rápidos.
