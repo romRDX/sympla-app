@@ -1,5 +1,6 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { format } from 'date-fns';
+import { act } from 'react-dom/test-utils';
 import Card from "../../components/Card/Card";
 
 const fakeEvent = { 
@@ -83,6 +84,25 @@ describe("Card component", () => {
 
     expect(ticketsTotal).toBeTruthy();
     expect(ticketsButton).toBeTruthy();
+  });
+
+  test('Should be able to activate card flip animation', () => {
+
+    render(<Card />);
+    
+    const cardFront = screen.getByTestId("card-front");
+    const cardBack = screen.getByTestId("card-back");
+    const ticketsButton = screen.getByText("VER INGRESSOS");
+
+    expect(cardFront).toHaveClass("card__eventCard__frontContent");
+    expect(cardBack).toHaveClass("card__eventCard__backContent");
+
+    act(() => {
+      fireEvent.click(ticketsButton);
+    });
+
+    expect(cardFront).toHaveClass("card__eventCard__frontContent--fliped");
+    expect(cardBack).toHaveClass("card__eventCard__backContent--fliped");
   });
 })
 

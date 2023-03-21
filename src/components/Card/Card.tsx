@@ -16,7 +16,7 @@ const Card = () => {
 
     return (
         <div className={styles.card__eventCard}>
-            <div className={ cardIsFliped ? styles['card__eventCard__frontContent--fliped'] : styles.card__eventCard__frontContent}>
+            <div className={ cardIsFliped ? styles['card__eventCard__frontContent--fliped'] : styles.card__eventCard__frontContent} data-testid="card-front">
                 <div className={styles.card__eventCard__panel} />
                 <div className={styles.card__eventCard__eventData}>
                     <b>{selectedEvent.name}</b>
@@ -37,7 +37,7 @@ const Card = () => {
                 </button>
             </div>
             
-            <div className={ cardIsFliped ? styles['card__eventCard__backContent--fliped'] : styles.card__eventCard__backContent}>
+            <div className={ cardIsFliped ? styles['card__eventCard__backContent--fliped'] : styles.card__eventCard__backContent} data-testid="card-back">
                 <div>
                     <ul>
                         {
