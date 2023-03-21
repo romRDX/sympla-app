@@ -22,7 +22,10 @@ achei que o ideal seria usar a context api do react para guardar esses dados, im
 dependendo da quantidade de dados já seria necessário usar o redux que é mais poderoso, do qual eu também sei usar.
 
 # Testes
-
+Felizmente consegui testar a maior parte do projeto e também os pontos mais importantes, talvez eu tenha deixado passar algum detalhe
+ou test case mais secundário, mas acho que está tudo bem. Testei todos os componentes e os hooks também, mas não testei as páginas inteiras
+então no caso foram apenas testes unitários, novamente foi mais questão de tempo pelos imprevistos, acredito que também não teria tido problemas
+em testar a compra de um ingresso do inicio ao fim já que todos os componentes que fazem essa funcionalidade funcioam e passaram nos testes.
 
 # Carrinho
 Foi bem tranquilo fazer a transição de páginas e ter acesso aos estados globais na página do carrinho, aproveitei e fiz
