@@ -26,7 +26,7 @@ describe("Header component", () => {
     // existem 2 de cada texto, um do header normal e um dentro do burger meno para mobile
     expect(producer[0]).toBeTruthy();
     expect(producer[1]).toBeTruthy();
-    expect(producerName.innerHTML).toBe("[John Doex]");
+    expect(producerName.innerHTML).toBe("[John Doe]");
     expect(login[0]).toBeTruthy();
     expect(login[1]).toBeTruthy();
     expect(register[0]).toBeTruthy();
