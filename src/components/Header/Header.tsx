@@ -16,7 +16,7 @@ const Header = ({ extended }: HeaderProps) => {
     return (
         <>
         <header className={ extended ? styles['header__container--extended'] : styles.header__container}>
-            <p>Fale com o produtor: <span>[Nome_do_Produtor]</span></p>
+            <p>Fale com o produtor: <span data-testid="producer-name">[{process.env.NEXT_PUBLIC_PRODUCER_NAME}]</span></p>
 
             <Image
                 src="/logo.png"
